@@ -41,7 +41,7 @@ public class CreateNewSpreadsheetDocument extends ApTask {
         Sheet activeSheet = doc.getActiveSheet();
 
         log.info("Rename active sheet to '{}'.", newSheetName);
-        activeSheet.rename(newSheetName);
+        doc.renameSheet(activeSheet, newSheetName);
 
         log.info("Put data on the sheet '{}'.", newSheetName);
         activeSheet.insertTable("C3", data);

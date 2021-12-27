@@ -3,7 +3,6 @@ package eu.ibagroup.easyrpa.examples.excel.macros_running;
 import eu.ibagroup.easyrpa.engine.annotation.ApModuleEntry;
 import eu.ibagroup.easyrpa.engine.apflow.ApModule;
 import eu.ibagroup.easyrpa.engine.apflow.TaskOutput;
-import eu.ibagroup.easyrpa.engine.boot.ApModuleRunner;
 import eu.ibagroup.easyrpa.examples.excel.macros_running.tasks.RunMacro;
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,9 +12,5 @@ public class MacrosRunningModule extends ApModule {
 
     public TaskOutput run() throws Exception {
         return execute(getInput(), RunMacro.class).get();
-    }
-
-    public static void main(String[] args) {
-        ApModuleRunner.localLaunch(MacrosRunningModule.class);
     }
 }

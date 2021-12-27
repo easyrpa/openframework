@@ -49,18 +49,16 @@
  - [Creating of new Excel file](excel/excel-file-creating)
  
  - [Reading data from given sheet](excel/sheet-data-reading)
-     * Read values of specific cells 
-     * Read values of cell range 
-     * Read the list of sheet table records    
+    * Read as range of data
+    * Read as list of records    
 
  - [Editing of existing Excel file](excel/excel-file-editing) 
-     * Edit specific cells
-     * Edit specific cell range
-     * Edit sheet table records   
+     * Edit cells
+     * Edit records   
  
  - [Working with large Excel files](excel/working-with-large-files)
-     * Read sheet table records   
-     * Edit sheet table records
+     * Read records   
+     * Edit records
  
  - [Copying of sheet from one Excel file to another](excel/sheets-copying)    
  
