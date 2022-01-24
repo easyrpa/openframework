@@ -5,12 +5,35 @@
     <groupId>eu.ibagroup</groupId>
     <artifactId>easy-rpa-openframework-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
+
+    <name>EasyRPA Open Framework</name>
+    <description>Open Framework is a collection of open-source Java libraries for Robotic Process Automation (RPA)
+        designed to be used with EasyRPA platform.
+        Open Framework contains functional to work with popular documents and services.
+        It's usage simplifies development of RPA processes based on Java language.
+    </description>
+    <url>https://github.com/easyrpa/openframework</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/easyrpa/openframework.git</connection>
+        <developerConnection>scm:git:ssh://github.com/easyrpa/openframework.git</developerConnection>
+        <url>https://github.com/easyrpa/openframework/tree/main/</url>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -278,7 +301,7 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
-    </dependencies>
-</dependencyManagement>
-        <!--    See https://central.sonatype.org/ -->
-        </project>
+        </dependencies>
+    </dependencyManagement>
+    <!--    See https://central.sonatype.org/ -->
+</project>
